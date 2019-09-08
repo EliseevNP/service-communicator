@@ -1,0 +1,32 @@
+{
+  "name": "serivce-communicator",
+  "version": "1.0.0",
+  "description": "Library for easy service communication",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EliseevNP/service-communicator.git"
+  },
+  "keywords": [
+    "node.js",
+    "amqp",
+    "rabbitmq",
+    "microservice"
+  ],
+  "author": "Nikita Eliseev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EliseevNP/service-communicator/issues"
+  },
+  "homepage": "https://github.com/EliseevNP/service-communicator#readme",
+  "dependencies": {
+    "amqplib": "^0.5.5",
+    "uuid": "^3.3.3"
+  }
+}
