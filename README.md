@@ -66,3 +66,7 @@ communicator.init().then(() => {
 ## Examples
 
 https://github.com/EliseevNP/nodetest
+
+## License
+
+MIT.
