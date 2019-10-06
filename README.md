@@ -11,7 +11,7 @@ npm i serivce-communicator
 ## Usage
 
 ### Application 1 (server)
-```
+```js
 const Communicator = require('serivce-communicator');
 
 // Create communicator based on AMQP protocol (need connect to rabbitmq server)
@@ -42,7 +42,7 @@ communicator.init().then(() => {
 });
 ```
 ## Application 2 (client)
-```
+```js
 const Communicator = require('serivce-communicator');
 
 // Create communicator based on AMQP protocol (need connect to rabbitmq server)
