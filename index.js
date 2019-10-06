@@ -1,3 +1,3 @@
 const Communicator = require('./lib/communicator');
 
-module.exports = Communicator
+module.exports = Communicator;
