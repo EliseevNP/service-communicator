@@ -1,9 +1,16 @@
+# serivce-communicator
+
+Library for easy service communication
+
+## Instalation
+
 ```sh
-npm install serivce-communicator
+npm i serivce-communicator
 ```
 
-# Usage
-## Application 1 (server)
+## Usage
+
+### Application 1 (server)
 ```
 const Communicator = require('serivce-communicator');
 
@@ -13,8 +20,8 @@ const communicator = new Communicator({
     type: 'AMQP',
     host: 'localhost',
     port: 5672
-  }
-})
+  },
+});
 
 // Init communicator
 communicator.init().then(() => {
@@ -24,12 +31,12 @@ communicator.init().then(() => {
     name: 'users',
     // Handlers are functions that represent an API service
     handlers: {
-        getUser: async (ctx) => {
-            console.log('Handle getUser action');
-            console.log(ctx) // { id: 1 }
-            return { id: 1, name: 'username 1' }
-        }
-    }
+      getUser: async (ctx) => {
+          console.log('Handle getUser action');
+          console.log(ctx) // { id: 1 }
+          return { id: 1, name: 'username 1' }
+      },
+    },
   });
   communicator.startAllServices();
 });
@@ -44,8 +51,8 @@ const communicator = new Communicator({
     type: 'AMQP',
     host: 'localhost',
     port: 5672
-  }
-})
+  },
+});
 
 // Init communicator
 communicator.init().then(() => {
@@ -56,5 +63,6 @@ communicator.init().then(() => {
 });
 ```
 
-# More examples
+## Examples
+
 https://github.com/EliseevNP/nodetest
