@@ -65,7 +65,7 @@ communicator.init().then(() => {
 
 ## Examples
 
-https://github.com/EliseevNP/nodetest
+https://github.com/EliseevNP/service-communicator-example
 
 ## License
 
